@@ -38,8 +38,13 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    compile('org.projectlombok:lombok') // 롬복 라이브러리(의존성) 추가. 받은 후 플러그인 설치 해야함.
+    // preference - build - compiler - AnnotationProcessor - Enalble annotation processing 체크
+    // 프로젝트마다 설정해줘야함.
 }
 // 의존성 코드는 직접 작성해도 되고, 자동완성으로 만들어도 됨.
 // 단, 특정 버전을 명시하면 안됨. 버전을 명시하지 않아야만 맨 위에 작성한
