@@ -42,7 +42,11 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
-    compile('org.projectlombok:lombok') // 롬복 라이브러리(의존성) 추가. 받은 후 플러그인 설치 해야함.
+    compile('org.projectlombok:lombok')
+    testCompile('org.projectlombok:lombok')
+    annotationProcessor('org.projectlombok:lombok')
+    testAnnotationProcessor('org.projectlombok:lombok')
+    // 롬복 라이브러리(의존성) 추가. 받은 후 플러그인 설치 해야함.
     // preference - build - compiler - AnnotationProcessor - Enalble annotation processing 체크
     // 프로젝트마다 설정해줘야함.
 }
