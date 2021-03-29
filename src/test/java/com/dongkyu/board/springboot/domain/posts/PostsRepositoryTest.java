@@ -33,7 +33,7 @@ public class PostsRepositoryTest {
         .title(title)
         .content(content)
         .author("dongkyu92@naver.com")
-        .build());
+        .build()); //
 
         //when
         List<Posts> postsList = postsRepository.findAll();
